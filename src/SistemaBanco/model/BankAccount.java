@@ -18,7 +18,7 @@ public class BankAccount {
             int numeroConta = scan.nextInt();
 
             System.out.println("Por favor, digite o valor do seu saldo!");
-            public double saldo = scan.nextDouble();
+            double saldo = scan.nextDouble();
 
             System.out.println("Olá " + nomeCliente
                     + ", obrigado por criar uma conta em nosso banco!");
@@ -28,7 +28,5 @@ public class BankAccount {
         } catch (InputMismatchException e){
             System.out.println("Erro : Formato de entrada invalido");
         }
-
     }
-
 }
