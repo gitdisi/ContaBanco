@@ -3,10 +3,10 @@ import SistemaBanco.exceptions.saldoInsuficiente;
 
 public class Balance {
     public static void main(String[] args) {
-        depositarSaldo(100, 50);
         try {
             sacarSaldo(100, 200);
         } catch (saldoInsuficiente e){
+            Thread.dumpStack();
            System.err.println("Erro detectado : " + e.getMessage());
         }
     }
